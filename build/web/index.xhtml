@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>TT</title>
+    </h:head>
+    <h:body>
+        <h:form>
+        <p:panelGrid id="panelGiris" columns="2" >
+            
+            <h:outputText value="Adınız: "/>
+            <h:inputText value="#{supClass2.name}" />
+            
+            <h:outputText value="Soyadınız: "/>
+            <h:inputText value="#{supClass2.surname}" />
+            
+            <h:outputText value="Şifreniz: "/>
+            <h:inputSecret value="#{supClass2.password}" />
+            
+            <h:outputText value="Bölüm Adınız: "/>
+            <h:inputText value="#{supClass2.bolumAdi}" />
+            
+            <h:outputText value="Yaşınız: "/>
+            <h:inputText value="#{supClass2.age}" />
+            
+            <h:outputText value="Foto URL: "/>
+            <h:inputText value="#{supClass2.url}"/>
+            
+            </p:panelGrid>
+            <h:commandButton value="Kayit Ol" action="#{supClass2.write()}" />
+         
+            
+        </h:form>
+                
+    </h:body>
+</html>
+
